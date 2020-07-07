@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LinearRecyclerViewActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Message"
+        android:textSize="24dp"
+        android:textColor="#FCFCFC"
+        android:background="#000"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#000">
+
+        <LinearLayout
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imb_1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#000"
+                android:scaleType="fitXY"
+                android:layout_weight="2"
+                android:gravity="start|center_vertical"
+                android:layout_margin="18dp"
+                android:src="@drawable/cai" />
+            <TextView
+                android:id="@+id/imb_t1"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:text="蔡依林超话"
+                android:textAlignment="center"
+                android:textColor="#FCFCFC" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imb_2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#000"
+                android:scaleType="fitXY"
+                android:layout_weight="2"
+                android:layout_margin="18dp"
+                android:gravity="start|center_vertical"
+                android:src="@drawable/lang" />
+            <TextView
+                android:id="@+id/imb_t2"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:text="郎朗超话"
+                android:textAlignment="center"
+                android:textColor="#FCFCFC" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imb_3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#000"
+                android:scaleType="fitXY"
+                android:layout_weight="2"
+                android:layout_margin="18dp"
+                android:src="@drawable/tang" />
+            <TextView
+                android:id="@+id/imb_t3"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:text="汤唯超话"
+                android:textAlignment="center"
+                android:gravity="start|center_vertical"
+                android:textColor="#FCFCFC" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imb_4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#000"
+                android:scaleType="fitXY"
+                android:layout_margin="18dp"
+                android:layout_weight="2"
+                android:gravity="start|center_vertical"
+                android:src="@drawable/liu" />
+            <TextView
+                android:id="@+id/imb_t4"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:text="刘德华超话"
+                android:textAlignment="center"
+                android:textColor="#FCFCFC" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentBottom="true"/>
+
+</LinearLayout>
